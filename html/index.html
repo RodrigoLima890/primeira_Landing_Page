@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+        <title>landing page</title>
+    </head>
+    <body>
+      <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+      <label for="close-menu" title="close menu" class="close-menu-label"></label>
+        <aside class="menu white-bg">
+            <div class="menu-content main-content">
+                <h1><a href="#">LOGO</a></h1>
+                <nav>
+                    <ul onclick="getElementById('close-menu').checked = false;" >
+                        <li><a href="#intro">intro</a></li>
+                        <li><a href="#pqflexbox">por quê flexbox?</a></li>
+                        <li><a href="#grid-one">modelo flex</a></li>
+                        <li><a href="#pricing">Table</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div id="intro" class="menu-spacing"></div>
+        <section class="main-bg section main-img">
+            <div class="main-content intro-content">
+                <div class="intro-text-content">
+                    <h2>Flexbox</h2>
+                    <p>Uma nova tecnologia, mas com suporte bastante difundido entre navegadores,
+                        o Flexbox está se tornando apto para uso geral. Flexbox provê ferramentas para criação rápida
+                        de layouts complexos e flexíveis, e características que se mostraram historicamente difíceis com CSS.
+                        Este artigo explica todos os seus fundamentos.</p>
+                </div>
+                <div class="intro-img"><img src="../img/img-intro.svg" alt="desenho de um homem segurando a logo do Css, uma mulher empurrando a do JavaScript e um homem segurando a do Html, respectivamente."></div>
+            </div>
+            </section>
+        <section class="white-bg section">
+            <div id="pqflexbox" class="main-content section2">
+                <h1>Por quê flexbox?</h1>
+                <p>por um longo tempo, as únicas ferramentas compatíveis entre browsers disponíveis para criação de
+                     layouts CSS eram coisas como floats e posicionamento.
+                     Estas são boas e funcionam, mas em alguns casos também são limitadas e frustrantes.</p><br>
+                <p>Os requisitos de layouts a seguir são difíceis ou impossíveis de se conseguir com estas ferramentas, em qualquer tipo conveniente e flexível:</p>
+                <ul>
+                    <li>Centralizar um bloco de conteúdo verticalmente dentro de seu pai.</li>
+                    <li>Fazer com que os filhos de um container ocupe uma quantidade igual de largura/altura disponível,
+                         independente da quantidade de largura/altura disponível</li>
+                    <li>Fazer todas as colunas de um layout com múltiplas colunas adotem a mesma altura, mesmo que contenham uma quantidade diferente de conteúdo.</li>
+                </ul>
+                <p>Como você verá nas seções subsequentes, flexbox faz muitas tarefas de layouts de maneira mais fácil. Vamos nos aprofundar!</p>
+            </div>
+        </section>
+        <section id="grid-one" class="white-bg section">
+            <div class="main-content grid-one-content">
+                <h2>Modelo Flex</h2>
+                <p>Quando os elementos são definidos como flexibles boxes, eles são dispostos ao longo de dois eixos:</p>
+                <div class="grid">
+                    <article>
+                        <h3>Main Axis</h3>
+                        <p>O main axis é o eixo que corre na direção em que os flex items estão dispostos (por exemplo, as linhas da página, ou colunas abaixo da página.) O início e o fim do eixo é chamado main start e main end.</p>
+                    </article>
+                    <article>
+                        <h3>Cross Axis</h3>
+                        <p>O cross axis é o eixo perpendicular que corre na direção em que os flex items são dispostos. O início e o fim deste eixo são chamados de cross start e cross end.</p>
+                    </article>
+                    <article>
+                        <h3>Flex Conteiner</h3>
+                        <p>O elemento pai que possui display: flex configurado ( 'section' em nosso exemplo) é chamado de flex container.!</p>
+                    </article>
+                    <article>
+                        <h3>Flex Itens</h3>
+                        <p>Os itens iniciados como flexible boxes dentro do flex container são chamados flex items (o 'article' em nosso caso).</p>
+                    </article>
+                    </div>
+                    <div><img class="imgflex" src="../img/alinhamento.png"></div>
+        </section>
+                    
+        <section id="pricing" class="white-bg section">
+            <div class="main-content pricing-class">
+              <h2>Pricing</h2>
+              <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some
+                surprises at the machine’s performance. This post details some background information on the experience of
+                porting Firefox to run natively on these CPUs.</p>
+              <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to
+                know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+        
+              <div class="responsive-table">
+                <table>
+                  <caption>Pricing table</caption>
+        
+                  <thead>
+                    <tr>
+                      <th>Title 1</th>
+                      <th>Title 2</th>
+                      <th>Title 3</th>
+                      <th>Title 4</th>
+                      <th>Title 5</th>
+                    </tr>
+                  </thead>
+        
+                  <tbody>
+                    <tr>
+                      <td>Content 1</td>
+                      <td>Content 2</td>
+                      <td>Content 3</td>
+                      <td>Content 3</td>
+                      <td>Content 3</td>
+                    </tr>
+                    <tr>
+                      <td>Content 1</td>
+                      <td>Content 2</td>
+                      <td>Content 3</td>
+                      <td>Content 3</td>
+                      <td>Content 3</td>
+                    </tr>
+                    <tr>
+                      <td>Content 1</td>
+                      <td>Content 2</td>
+                      <td>Content 3</td>
+                      <td>Content 3</td>
+                      <td>Content 3</td>
+                    </tr>
+                  </tbody>
+        
+                  <tfoot>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>Testando</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </section>
+          </div>
+          <section id="contact" class="main-img section">
+            <div class="main-content intro-content">
+              <div class="contact-form">
+                <fieldset class="form-grid full-width">
+                  <legend>contact me</legend>
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text"  name="firs-name" id="firs-name" placeholder="First name">
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text"  name="last-name" id="last-name" placeholder="Last name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email"  name="email" id="email" placeholder="E-mail">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your messager"></textarea>
+                  </div>
+                  <div class="form-group full-width">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </fieldset>
+              </div>  
+              <div class="intro-img"><img src="../img/imagem_sesão-contato.svg" alt="Desenho de uma mulher realizando seus estudos."></div>
+            </div>
+            </section>
+            <footer class="white-bg"><p>Feito por Rodrigo Lima</p></footer>
+            <a class="to-top" href="#">top</a>
+    </body>
+</html>
